@@ -42,9 +42,27 @@ function App() {
         </div>
       </div> */}
 
-      <div className='min-h-screen flex items-center justify-center bg-gray-100'>
+      {/* <div className='min-h-screen flex items-center justify-center bg-gray-100'>
         <div className='size-64 rounded-full bg-conic-180 from-indigo-600 via-indigo-50 to-indigo-600'></div>
         <div className='bg-radial from-yellow-500 to-red-500 h-64 w-64 rounded-full ml-5'></div>
+      </div> */}
+
+
+      {/* <div className='min-h-screen grid gap-4 place-items-center bg-deepblue'>
+        <input type="text" placeholder='Enter your name' className='inset-shadow-sm inset-shadow-amber-500 border-4 rounded-sm w-96 h-18 p-4 text-xl text-amber outline-none'/>
+
+        <input type="text" placeholder='Enter your name' className='inset-shadow-sm inset-shadow-amber-500 ring-4 rounded-sm w-96 h-18 p-4 text-xl text-amber outline-none'/>
+
+        <input type="text" placeholder='Enter your name' className='inset-ring-4 inset-ring-amber-500 border-4 rounded-sm w-96 h-18 p-4 text-xl text-amber outline-none'/>
+      </div> */}
+
+
+      <div className='min-h-screen flex - items-center justify-center bg-gray-100'>
+        <ul className='space-y-4 text-center'>
+          <li className='bg-gray-200 p-4 rounded text-lg not-active:bg-red-500'>Item 1</li>
+          <li className='bg-gray-200 p-4 rounded text-lg '>Item 2 (Active)</li>
+          <li className='bg-gray-200 p-4 rounded text-lg not-active:bg-red-500'>Item 3</li>
+        </ul>
       </div>
     </>
   )

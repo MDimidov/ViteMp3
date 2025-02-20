@@ -54,13 +54,12 @@ export default function DesktopMenu({ menu }) {
           variants={subMenuAnimate}
         >
           <div
-            className={`grid gap-7 ${
-              menu.gridCols === 3
+            className={`grid gap-7 ${menu.gridCols === 3
                 ? "grid-cols-3"
                 : menu.gridCols === 2
-                ? "grid-cols-2"
-                : "grid-cols-1"
-            }`}
+                  ? "grid-cols-2"
+                  : "grid-cols-1"
+              }`}
           >
             {hasSubMenu &&
               menu.subMenu.map((submenu, i) => (

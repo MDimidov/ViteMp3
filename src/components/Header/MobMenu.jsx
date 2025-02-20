@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
+import SearchBar from "./SearchBar";
 
 export default function MobMenu({ Menus }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +34,8 @@ export default function MobMenu({ Menus }) {
         animate={{ x: isOpen ? "0%" : "-100%" }}
       >
         <ul>
+          <SearchBar classParameter="max-md:block md:hidden" />
+
           {Menus.map(({ name, subMenu }, i) => {
             const isClicked = clicked === i;
             const hasSubMenu = subMenu?.length;

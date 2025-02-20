@@ -20,21 +20,24 @@ import { PanelTop } from "lucide-react";
 
 export const Menus = [
   {
-    name: "Features",
-    subMenuHeading: ["Design", "Scale"],
+    name: "Начало"
+  },
+  {
+    name: "Жанрове",
+    // subMenuHeading: ["Design", "Scale"],
     subMenu: [
       {
-        name: "Design",
+        name: "Ретро чалга",
         desc: "Responsive design",
         icon: PanelsTopLeft,
       },
       {
-        name: "Management",
+        name: "Чалга",
         desc: "Site control",
         icon: Bolt,
       },
       {
-        name: "Navigation",
+        name: "Бг рап",
         desc: "Link pages",
         icon: PanelTop,
       },
@@ -44,7 +47,7 @@ export const Menus = [
         icon: Database,
       },
     ],
-    gridCols: 2,
+    gridCols: 1,
   },
   {
     name: "Resources",

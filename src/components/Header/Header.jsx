@@ -6,7 +6,8 @@ import SearchBar from "./SearchBar.jsx";
 
 export default function Header() {
     return (
-        <header className="h-16 text-[15px] fixed inset-0 flex-center bg-[#18181A] mb-16">
+        <>
+        <header className="h-16 text-[15px] fixed inset-0 flex-center bg-[#18181A]">
             <nav className=" px-3.5 flex-center-between w-full max-w-7xl mx-auto">
                 <a href="#" className="flex-center gap-x-3 z-[999] relative">
                     <img src={Logo} alt="" className="size-8 .logo" />
@@ -32,5 +33,8 @@ export default function Header() {
                 </div>
             </nav>
         </header>
+        <div id="" className="mb-16"></div>
+        </>
+
     )
 }

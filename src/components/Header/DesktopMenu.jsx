@@ -40,7 +40,7 @@ export default function DesktopMenu({ menu }) {
       onHoverEnd={toggleHoverMenu}
       key={menu.name}
     >
-      <span className="flex-center gap-1 hover:bg-white/5 cursor-pointer px-3 py-1 rounded-xl">
+      <span className="flex-center gap-1 dark:hover:bg-white/5 cursor-pointer px-3 py-1 rounded-xl text-(--btn-light-color) dark:text-(--btn-dark-color)">
         {menu.name}
         {hasSubMenu && (
           <ChevronDown className="mt-[0.6px] group-hover/link:rotate-180 duration-200" />
@@ -63,19 +63,19 @@ export default function DesktopMenu({ menu }) {
           >
             {hasSubMenu &&
               menu.subMenu.map((submenu, i) => (
-                <div className="relative cursor-pointer" key={i}>
+                <div className="relative cursor-pointer text-(--btn-light-color) dark:text-(--btn-dark-color)" key={i}>
                   {menu.gridCols > 1 && menu?.subMenuHeading?.[i] && (
                     <p className="text-sm mb-4 text-gray-500">
                       {menu?.subMenuHeading?.[i]}
                     </p>
                   )}
                   <div className="flex-center gap-x-4 group/menubox">
-                    <div className="bg-white/5 w-fit p-2 rounded-md group-hover/menubox:bg-white group-hover/menubox:text-gray-900 duration-300">
+                    <div className="dark:bg-white/5 w-fit p-2 rounded-md group-hover/menubox:bg-black dark:group-hover/menubox:bg-white dark:group-hover/menubox:text-gray-900 group-hover/menubox:text-gray-100 duration-300">
                       {submenu.icon && <submenu.icon />}
                     </div>
                     <div>
                       <h6 className="font-semibold">{submenu.name}</h6>
-                      <p className="text-sm text-gray-400">{submenu.desc}</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">{submenu.desc}</p>
                     </div>
                   </div>
                 </div>

@@ -4,8 +4,10 @@
 
 @plugin 'tailwindcss-animate';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 body {
-  @apply bg-[#111] text-gray-300 /* font-inter */;
+  @apply dark:bg-[#111] dark:text-gray-300 /* font-inter */ bg-[url(https://media.gettyimages.com/id/1341288649/photo/75mpix-panorama-of-beautiful-mount-ama-dablam-in-himalayas-nepal.jpg?s=2048x2048&w=gi&k=20&c=myqGqw2-aPloyzruscJrGxtZ2KmIgt4-CVwRyxmmlrM=)];
 }
 
 @layer components {
@@ -24,18 +26,31 @@ body {
 }
 
 
-@variant lg {
+/* @variant lg {
   min-width: "925px";
-}
+} */
 
 @theme {
-  --deepblue-500: #023047;
+  /* --deepblue-500: #023047;
   --amber-500: #fb8500;
-  --alambaster-500: #e0e1dd;
+  --alambaster-500: #e0e1dd; */
   --default-font-family: "Inter", "sans-serif";
-  --screen-lg: 925px;
-  /* --screen-md: 768px; По подразбиране за md */
-  /* --screen-lg: 1024px; По подразбиране за lg */
+  --breakpoint-lg: 925px;
+  --breakpoint-md: 768px; /* По подразбиране за md */
+
+
+  /* Header */
+  --bg-dark-header: #18181A;
+  --bg-light-header: #fff;
+
+  /* Buttons */
+  --btn-dark-color: #d2d6dd;
+  --btn-light-color: black;
+
+
+  /* Footer */
+  --bg-dark-footer: #18181a8a;
+  --bg-light-footer: rgba(236, 233, 230, 0.638);
 }
 
 .logo {

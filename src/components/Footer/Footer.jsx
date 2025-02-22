@@ -1,5 +1,5 @@
 import { ArrowBigDown, ArrowDown, ArrowDown01Icon, ChevronDownIcon, ChevronUpIcon, CircleIcon, PauseIcon, PlayIcon, Repeat1Icon, RepeatIcon, ShuffleIcon, SkipBackIcon, SkipForwardIcon, SquareMenuIcon, Volume1Icon, Volume2Icon, VolumeIcon, VolumeXIcon } from 'lucide-react';
-import testImg from '../../../public/vite.svg';
+import testImg from '../../assets/vite.svg';
 
 export function FooterMusic() {
     const btnClass = 'gap-1 hover:bg-white/5 cursor-pointer px-3 py-1 rounded-xl';
@@ -12,7 +12,7 @@ export function FooterMusic() {
                 <ChevronUpIcon />
             </button>
 
-            <footer className="h-[72px] dark:bg-[#18181A] text-white bottom-0 w-full fixed flex items-center justify-between px-2 sm:px-4 md:px-6">
+            <footer className="h-[72px] rounded-3xl bg-(--bg-light-footer) dark:bg-(--bg-dark-footer) dark:text-white bottom-0 w-full fixed flex items-center justify-between px-2 sm:px-4 md:px-6 ring shadow-4xl ring-gray-900/5">
                 <div className="flex items-center gap-4 min-w-[120px]">
                     <img className="w-10 h-10 rounded-2xl" src={testImg} alt="" />
                     <div className="font-medium dark:text-white text-xs sm:text-sm">

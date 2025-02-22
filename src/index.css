@@ -7,12 +7,12 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 body {
-  @apply dark:bg-[#111] dark:text-gray-300 /* font-inter */ bg-[url(https://media.gettyimages.com/id/1341288649/photo/75mpix-panorama-of-beautiful-mount-ama-dablam-in-himalayas-nepal.jpg?s=2048x2048&w=gi&k=20&c=myqGqw2-aPloyzruscJrGxtZ2KmIgt4-CVwRyxmmlrM=)];
+  @apply dark:bg-[#111] dark:text-gray-300; /* font-inter */ /* bg-[url(https://media.gettyimages.com/id/1341288649/photo/75mpix-panorama-of-beautiful-mount-ama-dablam-in-himalayas-nepal.jpg?s=2048x2048&w=gi&k=20&c=myqGqw2-aPloyzruscJrGxtZ2KmIgt4-CVwRyxmmlrM=)]; */
 }
 
 @layer components {
   .sub-menu {
-    @apply absolute top-[4.2rem] p-[15px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-white/[0.04];
+    @apply absolute top-[4.2rem] p-[15px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-white/[0.04] ring shadow-2xl ring-gray-900/5;
   }
 }
 
@@ -51,6 +51,7 @@ body {
   /* Footer */
   --bg-dark-footer: #18181a8a;
   --bg-light-footer: rgba(236, 233, 230, 0.638);
+  --drop-shadow-3xl-footer: 10px -10px 10px rgba(0, 0, 0, 0.25); 
 }
 
 .logo {

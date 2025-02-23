@@ -48,8 +48,8 @@ body {
   --btn-light-color: black;
 
   /* Hero */
-  --bg-dark-hero: #fff;
-  --bg-light-hero: #18181a8a;
+  --bg-light-hero: #fff;
+  --bg-dark-hero: #18181A;
   --drop-shadow-3xl-hero: -10px -10px -10px rgba(0, 0, 0, 0.25);
 
   /* Footer */

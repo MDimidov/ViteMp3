@@ -49,7 +49,7 @@ export default function Header() {
                     </div>
                 </nav>
             </header>
-            <div id="" className="mb-16 h-0">.</div>
+            <div id="" className="mb-16 h-0 w-0 relative -z-10"></div>
         </>
 
     )

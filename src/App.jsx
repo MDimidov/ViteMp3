@@ -3,6 +3,7 @@ import { FooterMusic } from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Login from "./components/Login/Login";
 import { DarkMode } from "./components/Practice/DarkMode";
+import Hero from "./components/Hero/Hero";
 
 
 export default function App() {
@@ -11,7 +12,7 @@ export default function App() {
       <Header />
       {/* <Login /> */}
       {/* <DarkMode /> */}
-
+      <Hero />
       <FooterMusic />
     </div>
   );

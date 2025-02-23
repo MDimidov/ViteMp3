@@ -17,8 +17,8 @@ export default function Header() {
 
     return (
         <>
-            <header className="h-16 text-[15px] fixed inset-0 flex-center bg-(--bg-light-header) dark:bg-(--bg-dark-header) ring shadow-xl ring-gray-900/5">
-                <nav className=" px-3.5 flex-center-between w-full max-w-7xl mx-auto">
+            <header className="h-16 text-[15px] w-screen fixed inset-0 flex-center bg-(--bg-light-header) dark:bg-(--bg-dark-header) ring shadow-xl ring-gray-900/5">
+                <nav className=" px-3.5 flex-center justify-around w-full mx-auto">
                     <a href="#" className="flex-center gap-x-3 z-[999] relative">
                         <Volume2Icon className="size-8 .logo" />
                         <h3 className="text-lg font-semibold">ViteMp3</h3>
@@ -33,13 +33,13 @@ export default function Header() {
 
                         <button
                             aria-label="sign-in"
-                            className="dark:bg-white/5 z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center min-w-[73px] text-center cursor-pointer"
+                            className="dark:bg-white/5 z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center min-w-[73px] text-center cursor-pointer active:bg-black/5 dark:active:bg-white/1"
                         >
                             Sign In
                         </button>
                         <button
                             onClick={setThemeHandler}
-                            className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 cursor-pointer"
+                            className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 cursor-pointer active:bg-black/5 dark:active:bg-white/1"
                         >
                             {theme === "dark" ? <SunIcon /> : <MoonIcon />}
                         </button>

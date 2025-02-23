@@ -1,7 +1,7 @@
 import { ArrowBigDown, ArrowDown, ArrowDown01Icon, ChevronDownIcon, ChevronUpIcon, CircleIcon, FacebookIcon, HeartIcon, InstagramIcon, PauseIcon, PlayIcon, Repeat1Icon, RepeatIcon, ShuffleIcon, SkipBackIcon, SkipForwardIcon, SquareMenuIcon, Volume1Icon, Volume2Icon, VolumeIcon, VolumeXIcon, YoutubeIcon } from 'lucide-react';
 import testImg from '../../assets/vite.svg';
+import { btnClass } from '../../utils/utils';
 
-const btnClass = 'gap-1 hover:bg-white/5 cursor-pointer px-3 py-1 rounded-xl';
 
 export function FooterMusic() {
     return (
@@ -68,9 +68,9 @@ export function FooterMusic() {
                     </button>
 
                     <div className="min-w-[100px] sm:min-w-[160px] max-w-[200px]">
-                        <div className="w-full bg-gray-200 rounded-full h-1 dark:bg-gray-700 flex items-center relative">
+                        <div className="w-full bg-gray-200 rounded-full h-1 dark:bg-gray-700 flex items-center relative group">
                             <div className="bg-blue-600 h-1 rounded-full w-[60%]" />
-                            <CircleIcon fill="currentColor" width='12px' height='12px' className='cursor-pointer' />
+                            <CircleIcon fill="currentColor" width='12px' height='12px' className='cursor-pointer hidden group-hover:block' />
                         </div>
                     </div>
 

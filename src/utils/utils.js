@@ -151,3 +151,6 @@ export const Menus = [
     name: "Contact",
   },
 ];
+
+
+export const btnClass = 'gap-1 hover:bg-white/5 cursor-pointer px-3 py-1 rounded-xl';

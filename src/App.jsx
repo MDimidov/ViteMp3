@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="min-w-[850px]">
       <Header />
-      {/* <Login /> */}
+      <Login />
       {/* <DarkMode /> */}
       <Hero />
       <FooterMusic />

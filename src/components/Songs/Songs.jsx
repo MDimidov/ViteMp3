@@ -4,7 +4,7 @@ import SongItem from "./SongItem";
 export default function Songs() {
     return (
         <div className="w-full flex justify-items-start">
-            <table className="w-full text-xs text-left">
+            <table className="w-full text-xs text-left ">
                 <thead className="text-xs">
                     <tr className="py-7 ">
                         <th className="py-6">#</th>

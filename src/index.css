@@ -53,7 +53,7 @@ body {
   --drop-shadow-3xl-hero: 0 35px 35px rgba(0, 0, 0, 0.25);
 
   /* Footer */
-  --bg-dark-footer: #18181a8a;
+  --bg-dark-footer: #1e29398a;  /* #18181a8a; */
   --bg-light-footer: rgba(236, 233, 230, 0.638);
   --drop-shadow-3xl-footer: 10px -10px 10px rgba(0, 0, 0, 0.25); 
 }

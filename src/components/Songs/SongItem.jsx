@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import { btnClass } from "../../utils/utils";
 
-const trClass = "border-y group hover:bg-black/5 dark:hover:bg-white/5";
+const trClass = "border-y group hover:bg-black/5 dark:hover:bg-white/5 transform transition hover:scale-102 group";
 const tdClass = "py-4";
 export default function SongItem() {
 

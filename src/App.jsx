@@ -6,7 +6,7 @@ import { DarkMode } from "./components/Practice/DarkMode";
 import Hero from "./components/Hero/Hero";
 import Register from "./components/Register/Register";
 import Error404 from "./components/Errors/error404";
-import { Playlist } from "./components/Songs/Playlist";
+import { Playlist } from "./components/Songs/Playlist/Playlist";
 
 
 export default function App() {

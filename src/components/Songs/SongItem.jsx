@@ -36,8 +36,8 @@ export default function SongItem() {
             </td>
 
             <td className={tdClass}>
-                <button className={btnClass}>
-                    <HeartIcon />
+                <button className={`${btnClass} hover:text-red-500 transition-colors`}>
+                    <HeartIcon className="w-5 h-5" />
                 </button>{" "}
             </td>
             <td className={tdClass}>

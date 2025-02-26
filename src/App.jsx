@@ -1,5 +1,5 @@
 import { CircleDotIcon, CircleIcon, VolumeIcon } from "lucide-react";
-import { FooterMusic } from "./components/Footer/Footer";
+import FooterMusic from "./components/Footer/FooterMusic";
 import Header from "./components/Header/Header";
 import Login from "./components/Login/Login";
 import { DarkMode } from "./components/Practice/DarkMode";

@@ -9,6 +9,7 @@ import Error404 from "./components/Errors/error404";
 import { Playlist } from "./components/Songs/Playlist/Playlist";
 
 
+
 export default function App() {
   return (
     <div className="min-w-[850px]">

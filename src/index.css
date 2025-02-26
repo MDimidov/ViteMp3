@@ -7,7 +7,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 body {
-  @apply dark:bg-[#111] dark:text-gray-300; /* font-inter */ /* bg-[url(https://media.gettyimages.com/id/1341288649/photo/75mpix-panorama-of-beautiful-mount-ama-dablam-in-himalayas-nepal.jpg?s=2048x2048&w=gi&k=20&c=myqGqw2-aPloyzruscJrGxtZ2KmIgt4-CVwRyxmmlrM=)]; */
+  @apply dark:bg-[#111] dark:text-gray-300;
+  /* font-inter */
+  /* bg-[url(https://media.gettyimages.com/id/1341288649/photo/75mpix-panorama-of-beautiful-mount-ama-dablam-in-himalayas-nepal.jpg?s=2048x2048&w=gi&k=20&c=myqGqw2-aPloyzruscJrGxtZ2KmIgt4-CVwRyxmmlrM=)]; */
 }
 
 @layer components {
@@ -20,6 +22,7 @@ body {
   .flex-center {
     @apply flex items-center;
   }
+
   .flex-center-between {
     @apply flex items-center justify-between;
   }
@@ -36,7 +39,8 @@ body {
   --alambaster-500: #e0e1dd; */
   --default-font-family: "Inter", "sans-serif";
   --breakpoint-lg: 925px;
-  --breakpoint-md: 768px; /* По подразбиране за md */
+  --breakpoint-md: 768px;
+  /* По подразбиране за md */
 
 
   /* Header */
@@ -53,15 +57,52 @@ body {
   --drop-shadow-3xl-hero: 0 35px 35px rgba(0, 0, 0, 0.25);
 
   /* Footer */
-  --bg-dark-footer: #1e29398a;  /* #18181a8a; */
+  --bg-dark-footer: #1e29398a;
+  /* #18181a8a; */
   --bg-light-footer: rgba(236, 233, 230, 0.638);
-  --drop-shadow-3xl-footer: 10px -10px 10px rgba(0, 0, 0, 0.25); 
+  --drop-shadow-3xl-footer: 10px -10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .logo {
   filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
 }
 
+body {
+  overflow: hidden;
+}
+
+/* Scroll bar start*/
+/* Скриване на scrollbar-а по подразбиране */
+.scrollable-container::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+  transition: width 0.3s ease;
+}
+
+/* Пистата на скрола */
+.scrollable-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Самият скролър */
+.scrollable-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 16rem;
+  transition: background 0.3s ease;
+}
+
+/* Показване на scrollbar-а при hover */
+.scrollable-container:hover::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+/* Scroll bar end */
 
 /* .bg-deepblue {
   background-color: var(--deepblue-500);

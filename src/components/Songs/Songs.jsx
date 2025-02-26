@@ -3,7 +3,7 @@ import SongItem from "./SongItem";
 
 export default function Songs() {
     return (
-        <div className="w-full flex justify-items-start">
+        <div className="w-full">
             <table className="w-full text-xs text-left ">
                 <thead className="text-xs">
                     <tr className="py-7 ">
@@ -26,8 +26,31 @@ export default function Songs() {
                     <SongItem />
                     <SongItem />
                     <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
+                    <SongItem />
                 </tbody>
+                <div className="h-200px block">n</div>
             </table>
+
         </div>
     );
 }

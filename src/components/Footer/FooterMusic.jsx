@@ -47,7 +47,7 @@ import {
     const progressBarRef = useRef(null);
   
     // Реф за аудио елемента – задайте правилния път към аудио файла
-    const audioRef = useRef(new Audio("path/to/audio.mp3"));
+    const audioRef = useRef(new Audio("C:/DISK-D/Music/sober.mp3"));
   
     // Обновяване на currentTime чрез аудио събитие (timeupdate)
     useEffect(() => {

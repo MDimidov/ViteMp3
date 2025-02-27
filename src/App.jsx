@@ -12,6 +12,7 @@ import { PlaylistContext, PlaylistContextProvider } from "./contexts/PlaylistCon
 
 
 export default function App() {
+  
   return (
     <PlaylistContextProvider value={false}>
       <div className="min-w-[850px]">

@@ -6,13 +6,14 @@ import { DarkMode } from "./components/Practice/DarkMode";
 import Hero from "./components/Hero/Hero";
 import Register from "./components/Register/Register";
 import Error404 from "./components/Errors/error404";
-import { Playlist } from "./components/Songs/Playlist/Playlist";
+import { Playlists } from "./components/Songs/Playlist/Playlists";
 import { PlaylistContext, PlaylistContextProvider } from "./contexts/PlaylistContext";
+import Library from "./components/Songs/Library/Library";
 
 
 
 export default function App() {
-  
+
   return (
     <PlaylistContextProvider value={false}>
       <div className="min-w-[850px]">
@@ -21,7 +22,8 @@ export default function App() {
         {/* <Error404 /> */}
         {/* <Register /> */}
         {/* <DarkMode /> */}
-        <Playlist />
+        <Library />
+        <Playlists />
         <Hero />
         <FooterMusic />
       </div>

@@ -1,7 +1,7 @@
 import PlaylistItem from "./PlaylistItem";
 import { usePlaylistContext } from "../../../contexts/PlaylistContext";
 
-export function Playlist() {
+export function Playlists() {
   const { isPlaylistOn } = usePlaylistContext();
 
   return (

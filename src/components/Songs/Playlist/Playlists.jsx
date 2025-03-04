@@ -9,7 +9,7 @@ export function Playlists() {
   return (
     // <div className="absolute right-0 max-top-16 bottom-19 w-1/4 bg-white dark:bg-(--bg-dark-footer) rounded-xl shadow-lg border border-amber-600">
     <div
-      className={`fixed right-0 bottom-19 w-1/4 bg-white dark:bg-[var(--bg-dark-footer)] rounded-xl shadow-lg border border-amber-600 max-h-[calc(100vh-9rem)] flex flex-col overflow-hidden transform transition-transform duration-300 ${isPlaylistOn ? "translate-y-0" : "translate-y-full"}`}
+      className={`fixed right-0 bottom-18 w-1/4 bg-white dark:bg-[var(--bg-dark-footer)] rounded-xl shadow-lg border border-amber-600 max-h-[calc(100vh-8.5rem)] flex flex-col overflow-hidden transform transition-transform duration-300 ${isPlaylistOn ? "translate-y-0" : "translate-y-full"}`}
     >
       <div className="p-4 flex-none">
         <div className="flex gap-4 items-center justify-between">

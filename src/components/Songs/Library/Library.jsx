@@ -5,7 +5,7 @@ import { btnClass } from "../../../utils/utils";
 export default function Library() {
   return (
     <div
-      className={`fixed left-0 bottom-19 w-1/4 bg-white dark:bg-[var(--bg-dark-footer)] rounded-xl shadow-lg border border-amber-600 max-h-[calc(100vh-9rem)] flex flex-col overflow-hidden transform transition-transform duration-300`}
+      className={`fixed left-0 bottom-18 w-1/4 bg-white dark:bg-[var(--bg-dark-footer)] rounded-xl shadow-lg border border-amber-600 max-h-[calc(100vh-8.5rem)] flex flex-col overflow-hidden transform transition-transform duration-300`}
     >
       {/* Header – винаги видим */}
       <div className="p-4 flex-none">

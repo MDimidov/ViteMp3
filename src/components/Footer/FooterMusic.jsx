@@ -193,7 +193,7 @@ import {
                 Joined in August 2014
               </div>
             </div>
-            <button className={`${btnClass} hover:text-red-500 transition-colors`}>
+            <button className={`${btnClass} hover:text-red-500 hover:scale-105 active:scale-90 transition-colors`}>
               <HeartIcon className="w-5 h-5" />
             </button>
           </div>
@@ -201,18 +201,18 @@ import {
           <div className="flex flex-col items-center relative w-[40%] sm:w-[50%] md:w-[60%] max-w-[500px]">
             <div className="w-full flex justify-center space-x-2 sm:space-x-3">
               <button
-                className={`${btnClass} text-xs sm:text-sm hover:scale-105 transition-transform duration-200`}
+                className={`${btnClass} text-xs sm:text-sm hover:scale-105 active:scale-90 transition-transform duration-200`}
               >
                 <ShuffleIcon width={18} height={18} />
               </button>
               <button
-                className={`${btnClass} text-xs sm:text-sm hover:scale-105 transition-transform duration-200`}
+                className={`${btnClass} text-xs sm:text-sm hover:scale-105 active:scale-90 transition-transform duration-200`}
               >
                 <SkipBackIcon width={18} height={18} />
               </button>
               <button
                 onClick={handlePlayPause}
-                className={`${btnClass} text-lg sm:text-xl hover:scale-110 transition-transform duration-200`}
+                className={`${btnClass} text-lg sm:text-xl hover:scale-110 active:scale-100 transition-transform duration-200`}
               >
                 {isPlaying ? (
                   <PauseIcon width="36" height="36" />
@@ -221,12 +221,12 @@ import {
                 )}
               </button>
               <button
-                className={`${btnClass} text-xs sm:text-sm hover:scale-105 transition-transform duration-200`}
+                className={`${btnClass} text-xs sm:text-sm hover:scale-105 active:scale-90 transition-transform duration-200`}
               >
                 <SkipForwardIcon width={18} height={18} />
               </button>
               <button
-                className={`${btnClass} text-xs sm:text-sm hover:scale-105 transition-transform duration-200`}
+                className={`${btnClass} text-xs sm:text-sm hover:scale-105 active:scale-90 transition-transform duration-200`}
               >
                 <Repeat1Icon width={18} height={18} />
               </button>
@@ -291,7 +291,7 @@ import {
   
             <button
               onClick={setIsPlaylistOnHandler}
-              className={`${btnClass} hover:scale-105 transition-transform duration-200`}
+              className={`${btnClass} hover:scale-105 active:scale-90 transition-transform duration-200`}
             >
               <SquareMenuIcon
                 color={isPlaylistOn ? "#155dfc" : "currentColor"}

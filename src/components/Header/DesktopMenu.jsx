@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function DesktopMenu({ menu }) {
   const [isHover, toggleHover] = useState(false);
@@ -41,7 +42,7 @@ export default function DesktopMenu({ menu }) {
       key={menu.name}
     >
       <span className="flex-center gap-1 hover:bg-black/5 dark:hover:bg-white/5 cursor-pointer px-3 py-1 rounded-xl text-(--btn-light-color) dark:text-(--btn-dark-color)">
-        {menu.name}
+        <Link to={menu?.link} >{menu.name}</Link>
         {hasSubMenu && (
           <ChevronDown className="mt-[0.6px] group-hover/link:rotate-180 duration-200" />
         )}

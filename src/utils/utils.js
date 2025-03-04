@@ -20,7 +20,8 @@ import { PanelTop } from "lucide-react";
 
 export const Menus = [
   {
-    name: "Начало"
+    name: "Начало",
+    link: "/"
   },
   {
     name: "Жанрове",

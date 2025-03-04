@@ -9,6 +9,7 @@ import Error404 from "./components/Errors/error404";
 import { Playlists } from "./components/Songs/Playlist/Playlists";
 import { PlaylistContext, PlaylistContextProvider } from "./contexts/PlaylistContext";
 import Library from "./components/Songs/Library/Library";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 
@@ -18,14 +19,18 @@ export default function App() {
     <PlaylistContextProvider value={false}>
       <div className="min-w-[850px]">
         <Header />
-        {/* <Login /> */}
-        {/* <Error404 /> */}
-        {/* <Register /> */}
+
+        <Routes>
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route path="*" element={<Error404 />} />
+          <Route path="/" element={<Hero />} />
+        </Routes>
         {/* <DarkMode /> */}
         <Library />
         <Playlists />
-        <Hero />
         <FooterMusic />
+
       </div>
     </PlaylistContextProvider>
   );

@@ -5,6 +5,7 @@ import MobMenu from "./MobMenu";
 import SearchBar from "./SearchBar.jsx";
 import { useTheme } from "../../hooks/useTheme";
 import { MoonIcon, SunIcon, Volume2Icon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
 
@@ -19,10 +20,10 @@ export default function Header() {
         <>
             <header className="h-16 text-[15px] w-screen fixed inset-0 flex-center bg-(--bg-light-header) dark:bg-(--bg-dark-header) ring shadow-xl ring-gray-900/5">
                 <nav className=" px-3.5 flex-center justify-around w-full mx-auto">
-                    <a href="#" className="flex-center gap-x-3 z-[999] relative">
+                    <Link to="/" className="flex-center gap-x-3 z-[999] relative">
                         <Volume2Icon className="size-8 .logo" />
                         <h3 className="text-lg font-semibold">ViteMp3</h3>
-                    </a>
+                    </Link>
                     <ul className="gap-x-1 lg:flex hidden">
                         {Menus.map((menu) => (
                             <DesktopMenu menu={menu} key={menu.name} />
@@ -35,7 +36,7 @@ export default function Header() {
                             aria-label="sign-in"
                             className="dark:bg-white/5 z-[999] relative px-3 py-1.5 shadow rounded-xl flex-center min-w-[73px] text-center cursor-pointer active:bg-black/5 dark:active:bg-white/1"
                         >
-                            Sign In
+                            <Link to='/login'>Sign In</Link>
                         </button>
                         <button
                             onClick={setThemeHandler}

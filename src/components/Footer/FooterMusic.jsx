@@ -290,7 +290,7 @@ export default function FooterMusic() {
 
           <button
             onClick={setIsPlaylistOnHandler}
-            className={`${btnClass} hover:scale-105 active:scale-90 transition-transform duration-200`}
+            className={`${btnClass} hover:scale-105 active:scale-90 transition-transform duration-200 max-md:hidden`}
           >
             <SquareMenuIcon
               color={isPlaylistOn ? "#155dfc" : "currentColor"}

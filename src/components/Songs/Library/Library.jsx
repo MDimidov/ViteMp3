@@ -4,7 +4,7 @@ import { btnClass } from "../../../utils/utils";
 
 export default function Library() {
   return (
-    <div
+    <aside
       className={`fixed left-0 bottom-18 w-1/4 bg-white dark:bg-[var(--bg-dark-footer)] rounded-xl shadow-lg border border-amber-600 max-h-[calc(100vh-8.5rem)] flex flex-col overflow-hidden transform transition-transform duration-300 max-md:hidden`}
     >
       {/* Header – винаги видим */}
@@ -58,6 +58,6 @@ export default function Library() {
         <LibraryItem />
         <LibraryItem />
       </div>
-    </div>
+    </aside>
   );
 }

@@ -25,8 +25,9 @@ export default function App() {
           <Route path="register" element={<Register />} />
           <Route path="*" element={<Error404 />} />
           <Route path="/" element={<Hero />} />
+          <Route path="dark" element={<DarkMode />} />
         </Routes>
-        {/* <DarkMode /> */}
+        
         <Library />
         <Playlists />
         <FooterMusic />

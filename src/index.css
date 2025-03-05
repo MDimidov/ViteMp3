@@ -40,7 +40,7 @@ body {
   --default-font-family: "Inter", "sans-serif";
   --breakpoint-lg: 925px;
   --breakpoint-md: 847px;
-  --breakpoint-xs: 30rem;
+  --breakpoint-sm: 780px;
   /* По подразбиране за md */
 
 

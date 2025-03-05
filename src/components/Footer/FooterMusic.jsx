@@ -198,20 +198,20 @@ export default function FooterMusic() {
         </div>
 
         <div className="flex flex-col items-center relative w-[40%] sm:w-[50%] md:w-[60%] max-w-[500px]">
-          <div className="w-full flex justify-center space-x-2 sm:space-x-3 max-xs:space-x-0 max-xs:mr-3">
+          <div className="w-full flex justify-center space-x-2 sm:space-x-3 max-sm:space-x-0 max-sm:mr-3">
             <button
-              className={`${btnClass} text-xs sm:text-sm hover:scale-105 active:scale-90 transition-transform duration-200 max-xs:hidden`}
+              className={`${btnClass} text-xs sm:text-sm hover:scale-105 active:scale-90 transition-transform duration-200 max-sm:hidden`}
             >
               <ShuffleIcon width={18} height={18} />
             </button>
             <button
-              className={`${btnClass} text-xs sm:text-sm hover:scale-105 active:scale-90 transition-transform duration-200 max-xs:p-0`}
+              className={`${btnClass} text-xs sm:text-sm hover:scale-105 active:scale-90 transition-transform duration-200 max-sm:p-0`}
             >
               <SkipBackIcon width={18} height={18} />
             </button>
             <button
               onClick={handlePlayPause}
-              className={`${btnClass} text-lg sm:text-xl hover:scale-110 active:scale-100 transition-transform duration-200 max-xs:p-0 max-xs:mx-2`}
+              className={`${btnClass} text-lg sm:text-xl hover:scale-110 active:scale-100 transition-transform duration-200 max-sm:p-0 max-sm:mx-2`}
             >
               {isPlaying ? (
                 <PauseIcon width="36" height="36" />
@@ -220,18 +220,18 @@ export default function FooterMusic() {
               )}
             </button>
             <button
-              className={`${btnClass} text-xs sm:text-sm hover:scale-105 active:scale-90 transition-transform duration-200 max-xs:p-0`}
+              className={`${btnClass} text-xs sm:text-sm hover:scale-105 active:scale-90 transition-transform duration-200 max-sm:p-0`}
             >
               <SkipForwardIcon width={18} height={18} />
             </button>
             <button
-              className={`${btnClass} text-xs sm:text-sm hover:scale-105 active:scale-90 transition-transform duration-200 max-xs:hidden max-xs:p-0`}
+              className={`${btnClass} text-xs sm:text-sm hover:scale-105 active:scale-90 transition-transform duration-200 max-sm:hidden max-sm:p-0`}
             >
               <Repeat1Icon width={18} height={18} />
             </button>
           </div>
 
-          <div className="absolute -bottom-3 left-0 right-0 px-2 sm:px-6 max-xs:hidden">
+          <div className="absolute -bottom-3 left-0 right-0 px-2 sm:px-6 max-sm:hidden">
             <div className="flex items-center justify-between w-full">
               <span className="text-xs sm:text-sm mr-1.5">
                 {formatTime(currentTime)}
@@ -263,7 +263,7 @@ export default function FooterMusic() {
           </div>
         </div>
 
-        <div className="flex items-center justify-end space-x-2 max-xs:hidden sm:space-x-3 min-w-[120px]">
+        <div className="flex items-center justify-end space-x-2 max-sm:hidden sm:space-x-3 min-w-[120px]">
           <button className={`${btnClass} hover:scale-105 active:scale-90`} onClick={toggleVolumeHandler}>
             {volume === 0 && <VolumeXIcon className="w-6 h-6" />}
             {volume > 0 && volume < 1 / 3 && (

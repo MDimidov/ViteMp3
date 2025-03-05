@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 export default function Login() {
   return (
     <>
-      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 w-full m-auto">
-        <div className="sm:mx-auto sm:w-full">
+      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 mb-20 scrollable-container overflow-y-auto">
+        <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
             alt="Your Company"
             src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
@@ -15,7 +15,7 @@ export default function Login() {
           </h2>
         </div>
 
-        <div className="mt-10 mx-auto sm:w-full max-w-sm">
+        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form action="#" method="POST" className="space-y-6">
             <div>
               <label htmlFor="email" className="block text-sm/6 font-medium">

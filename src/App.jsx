@@ -17,7 +17,7 @@ export default function App() {
 
   return (
     <PlaylistContextProvider value={false}>
-      <div className="min-w-[850px]">
+      <div>
         <Header />
 
         <Routes>

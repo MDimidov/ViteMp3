@@ -18,7 +18,7 @@ export default function Header() {
 
     return (
         <>
-            <header className="h-16 text-[15px] w-screen fixed inset-0 flex-center bg-(--bg-light-header) dark:bg-(--bg-dark-header) ring shadow-xl ring-gray-900/5">
+            <header className="h-16 text-[15px] w-screen fixed z-999 inset-0 flex-center bg-(--bg-light-header) dark:bg-(--bg-dark-header) ring shadow-xl ring-gray-900/5">
                 <nav className=" px-3.5 flex-center justify-around w-full mx-auto">
                     <Link to="/" className="flex-center gap-x-3 z-[999] relative">
                         <Volume2Icon className="size-8 .logo" />

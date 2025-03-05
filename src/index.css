@@ -39,7 +39,8 @@ body {
   --alambaster-500: #e0e1dd; */
   --default-font-family: "Inter", "sans-serif";
   --breakpoint-lg: 925px;
-  --breakpoint-md: 768px;
+  --breakpoint-md: 847px;
+  --breakpoint-xs: 30rem;
   /* По подразбиране за md */
 
 

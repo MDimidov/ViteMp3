@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Login() {
   return (
     <>
-      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 mb-20 scrollable-container overflow-y-auto">
+      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 mb-20 max-h-[calc(100vh)] overflow-x-hidden overflow-y-auto scrollable-container pb-60">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
             alt="Your Company"

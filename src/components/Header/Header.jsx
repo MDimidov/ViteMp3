@@ -6,6 +6,8 @@ import SearchBar from "./SearchBar.jsx";
 import { useTheme } from "../../hooks/useTheme";
 import { MoonIcon, SunIcon, Volume2Icon } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 
 export default function Header() {
 
@@ -15,6 +17,11 @@ export default function Header() {
         setTheme(theme === "dark" ? "light" : "dark");
     }
 
+    const spring = {
+        type: "spring",
+        stiffness: 700,
+        damping: 30
+    };
 
     return (
         <>
@@ -38,12 +45,19 @@ export default function Header() {
                         >
                             <Link to='/login'>Sign In</Link>
                         </button>
-                        <button
+
+                        <div className={`w-[5rem] h-[2.4rem] bg-[#747476] flex rounded-full p-[0.2rem] cursor-pointer ${theme === "dark" ? 'justify-end' : 'justify-start'}`} onClick={setThemeHandler}>
+                            <motion.div className={`w-[2rem] h-[2rem] bg-gray-200 dark:bg-gray-800 cursor-pointer active:bg-black/5 dark:active:bg-white/1 rounded-full flex`} layout transition={spring}>
+                                {theme !== "dark" ? <SunIcon className="m-auto" /> : <MoonIcon className="m-auto" />}
+                            </motion.div>
+                        </div>
+
+                        {/* <button
                             onClick={setThemeHandler}
                             className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 cursor-pointer active:bg-black/5 dark:active:bg-white/1"
                         >
                             {theme === "dark" ? <SunIcon /> : <MoonIcon />}
-                        </button>
+                        </button> */}
                         <div className="lg:hidden">
                             <MobMenu Menus={Menus} />
                         </div>

@@ -1,7 +1,7 @@
 import { EllipsisIcon, HeartIcon, PlayIcon } from "lucide-react";
 
 export default function DiscoverItem() {
-    const btnClassCircle = 'hover:bg-black/15 dark:hover:bg-white/10 cursor-pointer w-10 h-10 rounded-full active:scale-90 hover:scale-110 text-gray-300';
+    const btnClassCircle = 'hover:bg-black/40 dark:hover:bg-white/10 cursor-pointer w-10 h-10 rounded-full active:scale-90 hover:scale-110 text-gray-300';
     return (
         <div>
             <div className="h-50 w-50 rounded-2xl overflow-hidden group transform transition ">
@@ -26,8 +26,8 @@ export default function DiscoverItem() {
                     </div>
                 </div>
             </div>
-            <p>Die with a smile</p>
-            <p className="text-xs text-gray-500 hover:underline">
+            <p className="hover:underline cursor-pointer">Die with a smile</p>
+            <p className="text-xs text-gray-500 hover:underline cursor-pointer mb-4">
                 Bruno mars, Gaga
             </p>
         </div>

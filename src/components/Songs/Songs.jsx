@@ -1,9 +1,10 @@
 import { ClockIcon } from "lucide-react";
 import SongItem from "./SongItem";
+import { Section } from "../Utils/Utils";
 
 export default function Songs() {
     return (
-        <div className="w-full mt-20 mb-20">
+        <Section className="w-full mt-20 mb-20">
             <table className="w-full text-xs text-left ">
                 <thead className="text-xs">
                     <tr className="py-7 ">
@@ -50,6 +51,6 @@ export default function Songs() {
                 </tbody>
             </table>
 
-        </div>
+        </Section>
     );
 }

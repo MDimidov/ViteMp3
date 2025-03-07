@@ -1,6 +1,6 @@
 import { EllipsisIcon, HeartIcon, PlayIcon } from "lucide-react";
 
-export default function DiscoverItem() {
+export default function PictureSongItem() {
     const btnClassCircle = 'hover:bg-black/40 dark:hover:bg-white/10 cursor-pointer w-10 h-10 rounded-full active:scale-90 hover:scale-110 text-gray-300';
     return (
         <div>

@@ -10,7 +10,7 @@ import { Playlists } from "./components/Songs/Playlist/Playlists";
 import { PlaylistContext, PlaylistContextProvider } from "./contexts/PlaylistContext";
 import Library from "./components/Songs/Library/Library";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Discover from "./components/Discover/Discover";
+import Discover from "./components/Discover/PictureSongs";
 
 
 
@@ -28,7 +28,6 @@ export default function App() {
           <Route path="/" element={<Hero />} />
           <Route path="dark" element={<DarkMode />} />
           {/* <Route path="discover" element={<Discover />} /> */}
-          
         </Routes>
         
         {/* <Library /> */}

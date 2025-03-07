@@ -11,6 +11,7 @@ import { PlaylistContext, PlaylistContextProvider } from "./contexts/PlaylistCon
 import Library from "./components/Songs/Library/Library";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Discover from "./components/Discover/PictureSongs";
+import { DragAndSlide } from "./components/Practice/DragAndSlide/DragAndSlide";
 
 
 
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="*" element={<Error404 />} />
           <Route path="/" element={<Hero />} />
           <Route path="dark" element={<DarkMode />} />
+          <Route path="drag" element={<DragAndSlide />} />
           {/* <Route path="discover" element={<Discover />} /> */}
         </Routes>
         

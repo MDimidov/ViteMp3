@@ -29,19 +29,19 @@ export function DragAndSlide() {
 
 
   return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden relative group">
       <div
-        className={`flex transition ease-out duration-400`}
+        className={`flex transition ease-out duration-400 gap-8`}
         style={{
-          transform: `translateX(-${current * 100}%)`,
+          transform: `translateX(-${current * 30}%)`,
         }}
       >
-        {slides.map((s) => {
-          return s;
+        {slides.map((s, index) => {
+          return <div key={index}>{s}</div>;
         })}
       </div>
 
-      <div className="absolute top-0 h-full w-full justify-between items-center flex gap-10 text-white px-10 text-3xl">
+      <div className="top-0 h-full w-full justify-between items-center flex gap-10 text-white px-10 text-3xl absolute">
         <button onClick={previousSlide}>
           <ChevronLeftCircleIcon />
         </button>

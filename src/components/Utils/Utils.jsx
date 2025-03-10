@@ -1,5 +1,5 @@
 import { useInView } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 export function Section({ children }) {
     const ref = useRef(null);
@@ -35,6 +35,7 @@ export function DragAndSlide({ children }) {
             // install Swiper modules
             modules={[Navigation, Pagination, A11y]}
             spaceBetween={0}
+            grabCursor={true}
             breakpoints={{
                 470: {
                     slidesPerView: 2,

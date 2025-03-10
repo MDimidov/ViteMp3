@@ -1,54 +1,32 @@
-import { ChevronLeftCircleIcon, ChevronRightCircleIcon } from "lucide-react";
-import { useState } from "react";
-import PictureSongItem from "../../Discover/PictureSongItem";
-export function DragAndSlide() {
-  let [current, setCurrent] = useState(0);
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-  const slides = [
-    <PictureSongItem />,
-    <PictureSongItem />,
-    <PictureSongItem />,
-    <PictureSongItem />,
-    <PictureSongItem />,
-    <PictureSongItem />,
-    <PictureSongItem />,
-    <PictureSongItem />,
-    <PictureSongItem />,
-    <PictureSongItem />,
-  ]
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
-  let previousSlide = () => {
-    if (current === 0) setCurrent(slides.length - 1);
-    else setCurrent(current - 1);
-  };
-
-  let nextSlide = () => {
-    if (current === slides.length - 1) setCurrent(0);
-    else setCurrent(current + 1);
-  };
-
-
+export function DragAndSlide({ children }) {
   return (
-    <div className="overflow-hidden relative group">
-      <div
-        className={`flex transition ease-out duration-400 gap-8`}
-        style={{
-          transform: `translateX(-${current * 30}%)`,
-        }}
-      >
-        {slides.map((s, index) => {
-          return <div key={index}>{s}</div>;
-        })}
-      </div>
+    <Swiper
+      // install Swiper modules
+      modules={[Navigation, Pagination, A11y]}
+      spaceBetween={0}
+      slidesPerView={3}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSlideChange={() => console.log("slide change")}
+    >
 
-      <div className="top-0 h-full w-full justify-between items-center flex gap-10 text-white px-10 text-3xl absolute">
-        <button onClick={previousSlide}>
-          <ChevronLeftCircleIcon />
-        </button>
-        <button onClick={nextSlide}>
-          <ChevronRightCircleIcon />
-        </button>
-      </div>
-    </div>
+      {children.map((c, index) => {
+
+        { console.log(index) }
+        < SwiperSlide key={index} > {c}</SwiperSlide>
+      }
+      )}
+    </Swiper >
   );
 }

@@ -1,5 +1,5 @@
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export function Section({ children }) {
     const ref = useRef(null);
@@ -14,5 +14,59 @@ export function Section({ children }) {
             }}>
             {children}
         </section>
+    );
+}
+
+// For DragAndSlide Utils
+
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
+export function DragAndSlide({ children }) {
+    return (
+        <Swiper
+            // install Swiper modules
+            modules={[Navigation, Pagination, A11y]}
+            spaceBetween={0}
+            breakpoints={{
+                470: {
+                    slidesPerView: 2,
+                },
+                680: {
+                    slidesPerView: 3,
+                },
+                847: {
+                    slidesPerView: 1,
+                },
+                940: {
+                    slidesPerView: 2,
+                },
+                1390: {
+                    slidesPerView: 3,
+                },
+                1720: {
+                    slidesPerView: 4,
+                }
+
+            }}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSlideChange={() => console.log("slide change")}
+            className="flex"
+        >
+            {
+                children.map((c, index) =>
+                    <SwiperSlide key={index}>{c}</SwiperSlide>
+                )
+            }
+        </Swiper >
     );
 }

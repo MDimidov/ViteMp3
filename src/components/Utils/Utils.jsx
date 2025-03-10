@@ -35,6 +35,7 @@ export function DragAndSlide({ children }) {
             // install Swiper modules
             modules={[Navigation, Pagination, A11y]}
             spaceBetween={0}
+            setWrapperSize={true}
             grabCursor={true}
             breakpoints={{
                 470: {

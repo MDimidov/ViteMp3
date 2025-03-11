@@ -50,7 +50,7 @@ body {
   /* Navigation */
   .custom-swiper .swiper-button-next,
   .custom-swiper .swiper-button-prev {
-    @apply !text-black dark:!text-white !size-10 rounded-full transition-transform duration-100;
+    @apply !text-black dark:!text-white !size-10 rounded-full transition-transform duration-100 !-translate-y-5;
   }
 
   .custom-swiper .swiper-button-next::after,

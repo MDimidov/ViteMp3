@@ -17,6 +17,19 @@ export default function PictureSongs({title}) {
                         <PictureSongItem className="snap-center" />
                         <PictureSongItem className="snap-center" />
                         <PictureSongItem className="snap-center" />
+                        <PictureSongItem className="snap-center" />
+                        <PictureSongItem className="snap-center" />
+                        <PictureSongItem className="snap-center" />
+                        <PictureSongItem className="snap-center" />
+                        <PictureSongItem className="snap-center" />
+                        <PictureSongItem className="snap-center" />
+                        <PictureSongItem className="snap-center" />
+                        <PictureSongItem className="snap-center" />
+                        <PictureSongItem className="snap-center" />
+                        <PictureSongItem className="snap-center" />
+                        <PictureSongItem className="snap-center" />
+                        <PictureSongItem className="snap-center" />
+                        <PictureSongItem className="snap-center" />
                     </DragAndSlide>
                 </section>
 

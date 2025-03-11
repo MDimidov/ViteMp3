@@ -62,11 +62,10 @@ export function DragAndSlide({ children }) {
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             onSlideChange={() => console.log("slide change")}
-            className="flex"
         >
             {
                 children.map((c, index) =>
-                    <SwiperSlide key={index}>{c}</SwiperSlide>
+                    <SwiperSlide key={index} className="!flex justify-around">{c}</SwiperSlide>
                 )
             }
         </Swiper >

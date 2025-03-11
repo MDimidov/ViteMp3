@@ -177,7 +177,7 @@ export default function FooterMusic() {
 
       {/* FooterMusic – плавно се скрива/показва с transform */}
       <footer
-        className={`fixed bottom-0 w-full h-[72px] rounded-3xl bg-(--bg-light-footer) dark:bg-(--bg-dark-footer) dark:text-white flex items-center justify-between px-2 sm:px-4 md:px-6 ring drop-shadow-3xl-footer ring-gray-900/5 transform transition-transform duration-300 ${isCollapsed ? "translate-y-full" : "translate-y-0"
+        className={`fixed bottom-0 w-full h-[72px] rounded-3xl bg-(--bg-light-footer) dark:bg-(--bg-dark-footer) dark:text-white flex items-center justify-between px-2 sm:px-4 md:px-6 ring drop-shadow-3xl-footer ring-gray-900/5 transform transition-transform duration-300 ${isCollapsed ? "translate-y-full" : "translate-y-0 z-999"
           }`}
       >
         <div className="flex items-center gap-4 min-w-[120px]">

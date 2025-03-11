@@ -40,9 +40,55 @@ body {
   .animate-fade-in {
     animation: fadeIn 1s ease-in-out;
   }
-
 }
 
+@layer swiper {
+
+  /* Navigation */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white !important;
+    /* Цвят на иконите */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Полупрозрачен фон */
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  /* Скрива бутоните по подразбиране */
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 10px !important;
+  }
+
+  /* Допълнителни стилизации при ховър */
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black !important;
+  }
+
+  /* Pagination */
+  /* Променя цвета на точките */
+  .swiper-pagination-bullet {
+    background: rgba(0, 0, 0, 0.8) !important;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    translate: 0 11px;
+  }
+
+  /* Активна точка */
+  .swiper-pagination-bullet-active {
+    background: white !important;
+    /* Променя цвета на активната точка */
+    opacity: 1;
+    width: 14px;
+    height: 14px;
+  }
+
+
+}
 
 /* @variant lg {
   min-width: "925px";

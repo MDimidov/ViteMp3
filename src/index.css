@@ -44,47 +44,38 @@ body {
 
 @layer swiper {
 
+  .swiper-scrollbar {
+    display: none !important;
+  }
   /* Navigation */
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: white !important;
-    /* Цвят на иконите */
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Полупрозрачен фон */
-    padding: 10px;
-    border-radius: 50%;
+  .custom-swiper .swiper-button-next,
+  .custom-swiper .swiper-button-prev {
+    @apply !text-black dark:!text-white !size-10 rounded-full transition-transform duration-100;
   }
 
-  /* Скрива бутоните по подразбиране */
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    font-size: 10px !important;
+  .custom-swiper .swiper-button-next::after,
+  .custom-swiper .swiper-button-prev::after {
+    @apply !text-xl;
   }
 
-  /* Допълнителни стилизации при ховър */
-  .swiper-button-next:hover,
-  .swiper-button-prev:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: black !important;
+  .custom-swiper .swiper-button-next:active,
+  .custom-swiper .swiper-button-prev:active {
+    @apply scale-90;
+  }
+
+  .custom-swiper .swiper-button-next:hover,
+  .custom-swiper .swiper-button-prev:hover {
+    @apply !text-[var(--purple-color)] !font-bold bg-black/40 dark:bg-white/40;
   }
 
   /* Pagination */
-  /* Променя цвета на точките */
-  .swiper-pagination-bullet {
-    background: rgba(0, 0, 0, 0.8) !important;
-    width: 20px;
-    height: 20px;
-    opacity: 0.5;
-    translate: 0 11px;
+  .custom-swiper .swiper-pagination-bullet {
+    @apply !bg-black/60 dark:!bg-white/60 !size-2.5 translate-y-3.5;
   }
 
   /* Активна точка */
-  .swiper-pagination-bullet-active {
-    background: white !important;
-    /* Променя цвета на активната точка */
-    opacity: 1;
-    width: 14px;
-    height: 14px;
+  .custom-swiper .swiper-pagination-bullet-active {
+    @apply !bg-[var(--purple-color)] !size-2.5;
   }
 
 
@@ -125,6 +116,10 @@ body {
   /* #18181a8a; */
   --bg-light-footer: rgba(236, 233, 230, 0.638);
   --drop-shadow-3xl-footer: 10px -10px 10px rgba(0, 0, 0, 0.25);
+
+  /* Common */
+  --purple-color: #4f39f6;
+  
 }
 
 .logo {

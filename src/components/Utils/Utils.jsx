@@ -62,6 +62,7 @@ export function DragAndSlide({ children }) {
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             onSlideChange={() => console.log("slide change")}
+            className="custom-swiper"
         >
             {
                 children.map((c, index) =>

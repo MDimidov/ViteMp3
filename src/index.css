@@ -70,7 +70,7 @@ body {
 
   /* Pagination */
   .custom-swiper .swiper-pagination-bullet {
-    @apply !bg-black/60 dark:!bg-white/60 !size-2.5 translate-y-3.5;
+    @apply !bg-black/60 dark:!bg-white/60 !size-1.5 translate-y-3.5;
   }
 
   /* Активна точка */

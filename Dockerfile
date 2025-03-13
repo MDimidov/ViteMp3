@@ -4,14 +4,14 @@ FROM node:18-alpine AS builder
 # 2. Задаване на работна директория
 WORKDIR /app
 
-# 3. Копиране на package.json и package-lock.json
-COPY package.json package-lock.json ./
+# 3. Копиране на package.json и package-lock.json (от frontend/)
+COPY frontend/package.json frontend/package-lock.json ./
 
 # 4. Инсталиране на зависимостите
 RUN npm install
 
-# 5. Копиране на целия код в контейнера
-COPY . .
+# 5. Копиране на целия код в контейнера (от frontend/)
+COPY frontend ./
 
 # 6. Билд на Vite приложението
 RUN npm run build
